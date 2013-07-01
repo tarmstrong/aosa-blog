@@ -22,11 +22,11 @@ SUMMARY_MAX_LENGTH = None
 STATIC_PATHS = ["pictures", ]
 
 # Take advantage of the following defaults
-STATIC_SAVE_AS = '/'
+STATIC_SAVE_AS = 'static/'
 
-# STATIC_URL = '{path}'
+STATIC_URL = 'static/'
 STATIC_PATHS = [
-    'pictures',
+    'pictures/',
     ]
 
 DEFAULT_PAGINATION = 50
