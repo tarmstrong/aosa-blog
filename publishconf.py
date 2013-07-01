@@ -7,6 +7,8 @@ from pelicanconf import *
 
 SITEURL = 'http://www.aosabook.org/blog'
 
+#STATIC_PATHS = ["pictures", ]
+
 DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing

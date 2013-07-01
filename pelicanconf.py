@@ -19,4 +19,14 @@ THEME = 'bootlex'
 
 SUMMARY_MAX_LENGTH = None
 
-DEFAULT_PAGINATION = 10
+STATIC_PATHS = ["pictures", ]
+
+# Take advantage of the following defaults
+STATIC_SAVE_AS = '/'
+
+# STATIC_URL = '{path}'
+STATIC_PATHS = [
+    'pictures',
+    ]
+
+DEFAULT_PAGINATION = 50
