@@ -3990,3 +3990,6 @@ a.thumbnail:hover {
 .collapse.in {
   height: auto;
 }
+h2 a {
+  color: rgb(51, 51, 51);
+}

@@ -1,9 +1,9 @@
 {% extends "base.html" %}
-{% block title %}Blog{%endblock%}
+{% block title %}{{ SITENAME }}{%endblock%}
 {% block content %}        
 <div id="content">
 {% block content_title %}
-<h1>Blog</h1>
+<h1>{{ SITENAME }}</h1>
 {% endblock %}
 
 <ul class="unstyled">
@@ -11,7 +11,7 @@
         <li>
             <div>    
                 <div class="header">
-                    <h2>{{ article.title }}</h2>
+                  <h2><a href="{{ SITEURL }}/{{ article.url }}" title="Permalink to {{ article.title }}">{{ article.title }}</a></h2>
                 </div>
                 <p class="meta"><small><span>{% if article.author %}<a href="{{ SITEURL }}/author/{{ article.author.slug }}/">{{ article.author }}</a> - {% endif %}</span><span>{{ article.locale_date }}</span> - <span class="tags">{% if article.tags %}{% for tag in article.tags %}<a href="/tag/{{ tag }}/">{{ tag }}</a>{% if not loop.last %}, {% endif %}{% endfor %}{% endif %}</span></small></p>
                 <div class="entry-content">
@@ -22,9 +22,6 @@
                         {% if DISQUS_SITENAME %}
                         <a class="btn btn-small disabled" href="{{ SITEURL }}/{{ article.url }}#disqus_thread"></a>
                         {% endif %}
-                    </div>
-                    <div class="span1 offset3">
-                        <a class="btn btn-small" href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title}}">Mehr</a>
                     </div>
                 </div>
             </div>
