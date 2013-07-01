@@ -33,7 +33,7 @@
               <li {% block menu_entry_archive %}{% endblock %}><a href="{{ SITEURL }}/archives/">Archive</a></li>
               {% if DISPLAY_PAGES_ON_MENU %}
               {% if PAGES %}
-              <li class="nav-header">Seiten</li>
+              <li class="nav-header">Pages</li>
               {% for p in PAGES %}
               <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
               {% endfor %}
