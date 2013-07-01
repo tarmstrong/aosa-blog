@@ -29,4 +29,7 @@ STATIC_PATHS = [
     'pictures/',
     ]
 
+ARTICLE_URL = '{date:%Y}/{date:%m}/{slug}/'
+ARTICLE_SAVE_AS = '{date:%Y}/{date:%m}/{slug}/index.html'
+
 DEFAULT_PAGINATION = 50
