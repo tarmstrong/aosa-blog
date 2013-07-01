@@ -15,4 +15,6 @@ LINKS =  ()
 # Social widget
 SOCIAL = ()
 
+THEME = 'bootlex'
+
 DEFAULT_PAGINATION = 10
