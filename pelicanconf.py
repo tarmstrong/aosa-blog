@@ -5,6 +5,7 @@ AUTHOR = u'The AOSA Editors'
 SITENAME = u'The Architecture of Open Source Applications: The Blog'
 SITEURL = ''
 
+
 TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = u'en'

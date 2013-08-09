@@ -5,7 +5,9 @@ import sys
 sys.path.append('.')
 from pelicanconf import *
 
-SITEURL = 'http://www.aosabook.org/blog'
+SITEURL = 'http://aosabook.org/blog'
+FEED_DOMAIN = SITEURL
+#FEED_ATOM = 'feeds/all.atom.xml'
 
 #STATIC_PATHS = ["pictures", ]
 
